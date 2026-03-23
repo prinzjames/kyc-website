@@ -424,7 +424,21 @@ renderEvents('all');
 
 
 
+
+</body>
+</html>
 <script>
+// Load photos async - never blocks page render
+(function(){
+  var b = new Blob([document.getElementById('kyc-imgs-data').textContent], {type:'text/javascript'});
+  var u = URL.createObjectURL(b);
+  var s = document.createElement('script');
+  s.src = u;
+  s.onload = function(){ URL.revokeObjectURL(u); };
+  document.head.appendChild(s);
+})();
+</script>
+<script id="kyc-imgs-data" type="text/plain">
 // KYC Photos — load after page renders for fast initial display
 (function(){
   var IMGS = [
@@ -528,12 +542,11 @@ renderEvents('all');
   }
 
   // Load after DOM ready — non-blocking
+  // Wait for page to render visually, then load photos
   if(document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadImgs);
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(loadImgs, 100); });
   } else {
-    setTimeout(loadImgs, 50);
+    setTimeout(loadImgs, 100);
   }
 })();
 </script>
-</body>
-</html>
