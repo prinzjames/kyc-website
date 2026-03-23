@@ -16,12 +16,12 @@
 <meta name="keywords" content="Kasarani Youngsters Church, KYC, Gospel Revival Wave Church, youth church Nairobi, church Kasarani, Christian youth Kenya, Sunday service Nairobi, church near me Kasarani, revival church Kenya, young people church Nairobi">
 <meta name="author" content="Kasarani Youngsters Church">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://kyc-webpage.netlify.app">
+<link rel="canonical" href="https://kyc-web.netlify.app">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Kasarani Youngsters Church | Where Youth Meets Revival">
 <meta property="og:description" content="A Spirit-filled youth church in Kasarani Sunton, Nairobi. Sundays 9AM – worship, prayer & life-changing messages.">
-<meta property="og:url" content="https://kyc-webpage.netlify.app">
+<meta property="og:url" content="https://kyc-web.netlify.app">
 <meta property="og:site_name" content="Kasarani Youngsters Church">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
@@ -29,7 +29,7 @@
 <meta name="twitter:description" content="Youth church in Kasarani Sunton, Nairobi. Sundays 9AM.">
 <!-- Schema.org Church Structured Data -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Church","name":"Kasarani Youngsters Church","alternateName":"KYC","url":"https://kyc-webpage.netlify.app","description":"A Spirit-filled community of young believers in Kasarani Sunton, Nairobi, Kenya. Part of Gospel Revival Wave Church.","address":{"@type":"PostalAddress","streetAddress":"Kasarani Sunton, Opposite Murema Primary School","addressLocality":"Nairobi","addressCountry":"KE"},"telephone":"+254798919998","openingHours":"Su 09:00-11:30","sameAs":["https://www.instagram.com/kasarani_youngsters_church","https://www.tiktok.com/@kasarani.youngsters","https://www.youtube.com/@jjireri","https://www.facebook.com/profile.php?id=100068284915514"]}
+{"@context":"https://schema.org","@type":"Church","name":"Kasarani Youngsters Church","alternateName":"KYC","url":"https://kyc-web.netlify.app","description":"A Spirit-filled community of young believers in Kasarani Sunton, Nairobi, Kenya. Part of Gospel Revival Wave Church.","address":{"@type":"PostalAddress","streetAddress":"Kasarani Sunton, Opposite Murema Primary School","addressLocality":"Nairobi","addressCountry":"KE"},"telephone":"+254798919998","openingHours":"Su 09:00-11:30","sameAs":["https://www.instagram.com/kasarani_youngsters_church","https://www.tiktok.com/@kasarani.youngsters","https://www.youtube.com/@jjireri","https://www.facebook.com/profile.php?id=100068284915514"]}
 </script> <style>.slide,.g-item,.mosaic img{background:linear-gradient(90deg,rgba(255,255,255,.05) 25%,rgba(255,255,255,.1) 50%,rgba(255,255,255,.05) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite linear}@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}.imgs-loaded .slide,.imgs-loaded .g-item,.imgs-loaded .mosaic img{animation:none}</style>
 <style>
 #sp{position:fixed;inset:0;background:#0d0620;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .6s}
@@ -267,7 +267,7 @@ x.fillStyle='#fff';x.fillRect(0,0,sz,sz);
 var img=new Image();img.crossOrigin='anonymous';
 img.onload=function(){x.clearRect(0,0,sz,sz);x.drawImage(img,0,0,sz,sz);};
 img.onerror=function(){x.fillStyle='#7c3aed';x.font='bold 11px Arial';x.textAlign='center';x.fillText('KYC',sz/2,sz/2+4);};
-img.src='https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fkyc-webpage.netlify.app&color=1a0030&bgcolor=ffffff&qzone=1';
+img.src='https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fkyc-web.netlify.app&color=1a0030&bgcolor=ffffff&qzone=1';
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bldQR);
 else setTimeout(bldQR,300);
@@ -382,7 +382,7 @@ function kTA(ts){var s=Math.floor((Date.now()-ts)/1000);if(s<60)return'just now'
 function kTP(id){var u=kycC();if(!u)return;var p=kycP();var x=p.find(function(r){return r.id===id;});if(!x)return;if(!x.by)x.by=[];var i=x.by.indexOf(u.email);if(i>-1)x.by.splice(i,1);else x.by.push(u.email);kycSP(p);kycWall();}
 function kDP(id){kycSP(kycP().filter(function(p){return p.id!==id;}));kycWall();}
 function tQA(el){var a=el.nextElementSibling;var o=a.classList.contains('open');document.querySelectorAll('.qa-a2').forEach(function(x){x.classList.remove('open');});document.querySelectorAll('.qa-q2').forEach(function(x){x.classList.remove('open');});if(!o){a.classList.add('open');el.classList.add('open');}}
-function shareKYC(){if(navigator.share){navigator.share({title:'Kasarani Youngsters Church',url:'https://kyc-webpage.netlify.app'}).catch(function(){});}else if(navigator.clipboard){navigator.clipboard.writeText('https://kyc-webpage.netlify.app').then(function(){alert('Link copied!');});}}
+function shareKYC(){if(navigator.share){navigator.share({title:'Kasarani Youngsters Church',url:'https://kyc-web.netlify.app'}).catch(function(){});}else if(navigator.clipboard){navigator.clipboard.writeText('https://kyc-web.netlify.app').then(function(){alert('Link copied!');});}}
 var ADMIN_PWD='KYC@Prinz2025';
 function openAdminLogin(){var al=document.getElementById('admin-login-overlay');if(al){al.style.display='flex';setTimeout(function(){var i=document.getElementById('admin-pass-input');if(i)i.focus();},100);}}
 function checkAdminPass(){var pass=(document.getElementById('admin-pass-input').value||'');if(pass===ADMIN_PWD){document.getElementById('admin-login-overlay').style.display='none';document.getElementById('admin-pass-input').value='';openAdminDash();}else{var err=document.getElementById('admin-pass-error');if(err){err.style.display='block';setTimeout(function(){err.style.display='none';},3000);}document.getElementById('admin-pass-input').value='';}}
